@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 2.6rem;
+}
+li {
+  font-size: 2rem;
+}
+.background-image {
+  background: url(../image/image_03.png) no-repeat;
+  background-size: cover;
+}
+
+/* Nav Section */
+a {
+  text-decoration: none;
+  color: rgb(205, 192, 176);
+  font-size: 2.4rem;
+}
+li a {
+  text-decoration: none;
+  color: rgb(205, 192, 176);
+  font-size: 1.5rem;
+}
+.main-head {
+  z-index: 1;
+  color: rgb(205, 192, 176);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(58, 62, 73, 0.3);
+}
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 0.5rem 0;
+  min-height: 8vh;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+header li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  display: block;
+  background-color: rgb(205, 192, 176);
+}
+header li a:hover::after {
+  width: 100%;
+  transition: all 0.5s;
+}
+#logo {
+  display: flex;
+  flex: 5 1 40rem;
+  align-items: center;
+}
+.hero {
+  min-height: 109vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to top, rgba(58, 62, 73, 0.5), transparent);
+}
+.hero-text {
+  color: rgb(205, 192, 176);
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  font-size: 8.5rem;
+  margin: 2rem 0;
+  font-weight: bolder;
+}
+h3 {
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+/* Biography */
+#biography {
+  background: rgb(205, 192, 176);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line-box {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.head {
+  display: flex;
+  flex: 2 1 20rem;
+  flex-direction: column;
+}
+h4 {
+  font-size: 6rem;
+  color: rgb(58, 62, 73);
+  margin-bottom: 1rem;
+  border-bottom: rgb(58, 62, 73) 2px solid;
+}
+h4-1 {
+  font-size: 1.4rem;
+  margin-right: 10rem;
+  padding-top: 1.2rem;
+}
+.text {
+  flex: 1 1 60rem;
+  display: flex;
+  border: rgb(58, 62, 73) 2px solid;
+  border-radius: 20px;
+  padding: 40px;
+  margin: 10px 10px 10px 0;
+}
+h5 {
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.1;
+}
+h5 p {
+}
+
+/* Lessons */
+.lessons {
+  min-height: 100vh;
+}
+.class-head {
+  background-color: rgb(58, 62, 73);
+  padding: 3rem;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: rgb(167, 158, 142);
+}
+h6 {
+  font-size: 5rem;
+  padding: 1.4rem;
+}
+h7 {
+  font-size: 2.8rem;
+}
+.cards-background {
+  background: rgb(205, 192, 176);
+  min-height: 60vh;
+}
+.cards {
+  pointer-events: none;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(58, 62, 73);
+  transition-duration: 0.4s;
+  height: 60vh;
+}
+.card:hover {
+  background-color: rgba(196, 196, 196, 0.301);
+}
+h8:hover {
+  color: rgb(58, 62, 73);
+  transition-duration: 0.7s;
+}
+.cards img {
+  clear: both;
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  opacity: 0.6;
+}
+h8 {
+  color: rgb(167, 158, 142);
+  padding: 5rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Contact */
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgba(58, 62, 73, 0.2), transparent),
+    url(../image/musical-notes-on-brown-wooden-table-4709825.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-wrapper {
+  background: rgba(58, 62, 73, 0.8);
+  width: 60%;
+  color: rgb(205, 192, 176);
+  border-radius: 10px;
+}
+.form-head {
+  font-size: 4rem;
+  text-align: center;
+  padding: 4rem;
+  letter-spacing: 0.2rem;
+}
+.name-form,
+.message {
+  text-align: center;
+  padding: 1rem;
+  letter-spacing: 0.2rem;
+  color: rgb(167, 158, 142);
+}
+.name-form input {
+  width: 70%;
+  font-size: 1.7rem;
+}
+textarea {
+  border-radius: 10px;
+  background: rgb(205, 192, 176);
+  font-family: "Poppins", sans-serif;
+}
+.message textarea {
+  vertical-align: middle;
+  resize: none;
+  height: 25rem;
+  width: 70%;
+}
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 3rem;
+  background-color: rgb(205, 192, 176);
+  color: rgba(58, 62, 73, 0.8);
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.form-wrapper button:hover {
+  background-color: rgb(212, 206, 194);
+  cursor: pointer;
+}
+.form-wrapper input {
+  padding: 0.6rem 2rem;
+  background-color: rgb(205, 192, 176);
+  border: none;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+}
+.form-wrapper input:hover {
+  background-color: rgb(212, 206, 194);
+}
+
+/* footer */
+footer {
+  background-color: rgb(205, 192, 176);
+  color: rgba(58, 62, 73, 0.8);
+}
+.footer-wrapper {
+  display: flex;
+  padding: 2rem 0rem;
+  width: 90%;
+  margin: auto;
+  min-height: 7vh;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer h10 {
+  font-size: 1.2rem;
+  padding: 1.3rem 1rem;
+}
+
+/* Media quiries */
+@media screen and (max-width: 889px) {
+  /* nav */
+  nav {
+    text-align: center;
+  }
+
+  /* hero */
+  .hero {
+    text-align: center;
+  }
+  .background-image {
+    background-position: 70% 0%;
+  }
+  #logo {
+    padding: 1rem;
+    justify-content: center;
+  }
+  h2 {
+    font-size: 5.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  /* biography */
+  .head {
+    margin: 0;
+  }
+  .text {
+    padding: 10px;
+  }
+  h5 {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+
+  /* contact */
+  #contact {
+  }
+  .form-wrapper {
+    width: 90%;
+    height: 50%;
+  }
+  form {
+  }
+  /* footer */
+  footer {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  h4-1 {
+    display: none;
+  }
+}
